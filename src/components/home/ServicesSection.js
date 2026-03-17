@@ -10,7 +10,7 @@ export default function ServicesSection() {
   const { services, stats } = siteData;
 
   return (
-    <section id="services" className="relative w-full py-14 px-4 sm:px-8 lg:px-12 overflow-hidden" style={{ backgroundColor: "#1C2D5A" }}>
+    <section id="services" className="relative w-full py-14 px-4 sm:px-8 lg:px-12 overflow-hidden" style={{ backgroundColor: "#3D3D3D" }}>
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow */}
         <motion.div

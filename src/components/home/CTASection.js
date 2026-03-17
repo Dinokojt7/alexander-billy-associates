@@ -18,7 +18,7 @@ export default function CTASection() {
             GET IN{" "}
             <span className="relative inline-block">
               TOUCH
-              <span className="absolute left-0 -bottom-1 h-1 w-full bg-[#1C2D5A]" />
+              <span className="absolute left-0 -bottom-1 h-1 w-full bg-[#3D3D3D]" />
             </span>
           </h2>
           <p className="text-white/70 text-sm leading-relaxed max-w-sm mt-4">
@@ -34,7 +34,7 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
           className="hidden md:flex items-center gap-1 self-center"
-          style={{ color: "#1C2D5A" }}
+          style={{ color: "#3D3D3D" }}
           aria-hidden="true"
         >
           {Array.from({ length: 8 }).map((_, i) => (
@@ -54,8 +54,8 @@ export default function CTASection() {
         >
           <Link
             href="mailto:mrmasungwini@gmail.com"
-            className="inline-flex items-center justify-center h-12 px-8 border-2 rounded-md text-xs font-black tracking-widest uppercase hover:bg-[#1C2D5A] hover:border-[#1C2D5A] hover:text-white transition-colors"
-            style={{ borderColor: "#1C2D5A", color: "#1C2D5A" }}
+            className="inline-flex items-center justify-center h-12 px-8 border-2 rounded-md text-xs font-black tracking-widest uppercase hover:bg-[#3D3D3D] hover:border-[#3D3D3D] hover:text-white transition-colors"
+            style={{ borderColor: "#3D3D3D", color: "#3D3D3D" }}
           >
             LET&apos;S TALK
           </Link>

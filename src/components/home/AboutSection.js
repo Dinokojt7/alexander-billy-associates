@@ -14,7 +14,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase leading-[1.05] tracking-tight mb-8" style={{ color: "#1C2D5A" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase leading-[1.05] tracking-tight mb-8" style={{ color: "#3D3D3D" }}>
             TAX IS MORE THAN<br />
             COMPLIANCE. IT IS THE<br />
             FOUNDATION OF YOUR{" "}

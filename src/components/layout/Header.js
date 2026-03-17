@@ -28,12 +28,12 @@ export default function Header() {
   return (
     <>
       {/* Header */}
-      <header style={{ backgroundColor: "#1C2D5A" }}>
+      <header style={{ backgroundColor: "#3D3D3D" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="relative h-14 w-40 shrink-0">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Alexander Billy and Associates"
               fill
               priority
@@ -59,7 +59,7 @@ export default function Header() {
             {/* LET'S TALK button */}
             <Link
               href="/#contact"
-              className="hidden sm:flex h-10 px-6 items-center border-2 border-white text-white text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#1C2D5A] transition-colors rounded-md"
+              className="hidden sm:flex h-10 px-6 items-center border-2 border-white text-white text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#3D3D3D] transition-colors rounded-md"
             >
               LET&apos;S TALK
             </Link>
@@ -110,11 +110,11 @@ export default function Header() {
               exit={{ x: "-100%" }}
               transition={{ type: "tween", duration: 0.3 }}
               className="fixed left-0 top-0 h-full w-4/5 max-w-xs z-50 flex flex-col"
-              style={{ backgroundColor: "#1C2D5A" }}
+              style={{ backgroundColor: "#3D3D3D" }}
             >
               <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
                 <Link href="/" className="relative h-12 w-32" onClick={() => setMenuOpen(false)}>
-                  <Image src="/images/logo.jpg" alt="Alexander Billy and Associates" fill className="object-contain object-left brightness-0 invert" />
+                  <Image src="/images/logo.png" alt="Alexander Billy and Associates" fill className="object-contain object-left brightness-0 invert" />
                 </Link>
                 <button onClick={() => setMenuOpen(false)} className="p-2 text-white">
                   <X className="w-5 h-5" />

@@ -9,7 +9,7 @@ export default function Hero() {
       <div
         className="relative w-full overflow-hidden"
         style={{
-          backgroundColor: "#1C2D5A",
+          backgroundColor: "#3D3D3D",
           borderRadius: "0 0 64px 64px",
           minHeight: "clamp(380px, 60vh, 680px)",
         }}

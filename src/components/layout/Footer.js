@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full relative" style={{ backgroundColor: "#1C2D5A" }}>
+    <footer className="w-full relative" style={{ backgroundColor: "#3D3D3D" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-14 md:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Brand */}
