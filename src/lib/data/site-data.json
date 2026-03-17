@@ -1,0 +1,96 @@
+{
+  "business": {
+    "name": "Alexander Billy and Associates",
+    "tagline": "Serving Community Over 25 Years",
+    "shortName": "Alexander Billy",
+    "description": "Tax specialists serving individuals and businesses across KZN for over 25 years with personalised, professional service.",
+    "email": "mrmasungwini@gmail.com",
+    "phone": "+27781294890",
+    "address": "Durban, KZN, South Africa",
+    "social": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#",
+      "linkedin": "#"
+    }
+  },
+  "services": [
+    { "title": "Tax Returns", "description": "Individual and corporate tax return preparation and submission." },
+    { "title": "Tax Planning", "description": "Strategic tax planning to minimise liability and maximise savings." },
+    { "title": "Financial Reports", "description": "Comprehensive financial statements and management accounts." },
+    { "title": "Payroll Services", "description": "Full payroll processing, compliance, and PAYE management." },
+    { "title": "Budget Analysis", "description": "Detailed budget planning and variance analysis for your business." },
+    { "title": "Internal Auditing", "description": "Certified internal audit services ensuring compliance and accuracy." }
+  ],
+  "stats": [
+    { "num": "25+", "label": "Years Experience" },
+    { "num": "500+", "label": "Clients Served" },
+    { "num": "100%", "label": "SARS Compliant" }
+  ],
+  "testimonials": [
+    {
+      "company": "Mthembu Family Trust",
+      "companyType": "Property & Investments",
+      "headline": "25 YEARS OF TRUST THAT KEEPS OUR FINANCES SECURE",
+      "subheadline": "TAX PLANNING HELPED US BUILD WEALTH ACROSS GENERATIONS",
+      "quote": "Alexander Billy and Associates have been our trusted tax advisors for over a decade. Their deep knowledge of South African tax law and their personal approach set them apart. They don't just file returns — they help us plan for the future. Truly exceptional service.",
+      "author": "Nhlanhla Mthembu",
+      "role": "Trustee"
+    },
+    {
+      "company": "Coastal Catering Co.",
+      "companyType": "Hospitality & Events",
+      "headline": "SARS COMPLIANCE GAVE US CONFIDENCE TO EXPAND",
+      "subheadline": "PAYROLL AND TAX RETURNS HANDLED WITHOUT A SINGLE ISSUE",
+      "quote": "Running a catering business with seasonal staff is complicated. Alexander Billy's team handles our payroll, PAYE, and annual returns seamlessly. Since working with them we've never had a SARS query go unresolved. We can focus on the food, not the paperwork.",
+      "author": "Fatima Osman",
+      "role": "Owner & Head Chef"
+    },
+    {
+      "company": "Biyela Electrical (Pty) Ltd",
+      "companyType": "Construction & Electrical",
+      "headline": "CLEAN BOOKS THAT UNLOCKED OUR FIRST MAJOR TENDER",
+      "subheadline": "FINANCIAL REPORTS THAT MET EVERY GOVERNMENT REQUIREMENT",
+      "quote": "We had always struggled to get our financials in order for tender applications. Alexander Billy's team prepared proper financial statements and tax clearance documentation that finally got us through the gate. We won our first government contract shortly after.",
+      "author": "Sifiso Biyela",
+      "role": "Managing Director"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "WHAT TAX SERVICES DO YOU OFFER?",
+      "answer": "We offer a full range of tax services including individual and corporate tax returns, provisional tax submissions, VAT registration and returns, PAYE management, and strategic tax planning to minimise your liability."
+    },
+    {
+      "question": "HOW DO I KNOW IF I NEED TO FILE A TAX RETURN?",
+      "answer": "If you earned income above the SARS threshold in a given year, received a tax directive, or ran a business, you are likely required to file. We can assess your situation and advise on your obligations — contact us for a free initial consultation."
+    },
+    {
+      "question": "WHAT DOCUMENTS DO I NEED FOR TAX FILING?",
+      "answer": "Typically you will need your IRP5 or IT3(a) certificates, medical aid certificate, retirement annuity contributions, bank statements, and any other income or expense records. We will give you a full checklist tailored to your situation."
+    },
+    {
+      "question": "DO YOU ASSIST WITH SARS eFILING?",
+      "answer": "Yes. We are registered SARS tax practitioners and handle all eFiling submissions on behalf of our clients. We manage the entire process — from gathering documents to submission and follow-up with SARS where needed."
+    },
+    {
+      "question": "HOW DO I GET STARTED?",
+      "answer": "Simply reach out via phone or email and we will schedule an initial consultation at no obligation. We will discuss your needs, explain our process, and provide a clear fee structure before any work begins."
+    }
+  ],
+  "footer": {
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/#about" },
+      { "label": "Services", "href": "/#services" },
+      { "label": "Testimonials", "href": "/#testimonials" },
+      { "label": "FAQ", "href": "/#faq" },
+      { "label": "Contact", "href": "/#contact" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "href": "/privacy-policy" },
+      { "label": "Terms of Service", "href": "/terms" },
+      { "label": "PAIA Manual", "href": "/paia" }
+    ]
+  }
+}

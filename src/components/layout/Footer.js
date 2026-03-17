@@ -1,0 +1,149 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, ChevronRight, Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
+import siteData from "@/lib/data/site-data.json";
+
+export default function Footer() {
+  const { business, footer } = siteData;
+
+  const socialLinks = [
+    { icon: Instagram, href: business.social.instagram, label: "Instagram" },
+    { icon: Facebook, href: business.social.facebook, label: "Facebook" },
+    { icon: Twitter, href: business.social.twitter, label: "Twitter" },
+    { icon: Linkedin, href: business.social.linkedin, label: "LinkedIn" },
+  ];
+
+  return (
+    <footer className="w-full relative" style={{ backgroundColor: "#1C2D5A" }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-14 md:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+          {/* Brand */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="lg:col-span-4 space-y-5"
+          >
+            <div className="relative h-16 w-44">
+              <Image
+                src="/images/logo.jpg"
+                alt={business.name}
+                fill
+                className="object-contain object-left brightness-0 invert"
+              />
+            </div>
+            <p className="text-white/50 text-sm leading-relaxed max-w-xs">{business.description}</p>
+            <p className="text-xs uppercase tracking-[0.15em] font-semibold" style={{ color: "#CC2020" }}>
+              Serving Community Over 25 Years
+            </p>
+            <div className="flex items-center gap-3 pt-1">
+              {socialLinks.map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white transition-all"
+                >
+                  <Icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="lg:col-span-2"
+          >
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-5">Quick Links</h4>
+            <ul className="space-y-3">
+              {footer.quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="group flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm">
+                    <ChevronRight className="w-3.5 h-3.5 text-white/20 group-hover:text-[#CC2020] transition-colors" />
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Legal */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="lg:col-span-2"
+          >
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-5">Legal</h4>
+            <ul className="space-y-3">
+              {footer.legal.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="group flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm">
+                    <ChevronRight className="w-3.5 h-3.5 text-white/20 group-hover:text-[#CC2020] transition-colors" />
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="text-xs text-white/30 mt-6 pt-4 border-t border-white/10">
+              All services subject to engagement letter.<br />For research use only.
+            </p>
+          </motion.div>
+
+          {/* Contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="lg:col-span-4"
+          >
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-5">Contact</h4>
+            <div className="space-y-4">
+              <a href={`tel:${business.phone}`} className="flex items-center gap-3 text-white/50 hover:text-white transition-colors group">
+                <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#CC2020] transition-colors">
+                  <Phone className="w-3.5 h-3.5" />
+                </div>
+                <span className="text-sm">{business.phone}</span>
+              </a>
+              <a href={`mailto:${business.email}`} className="flex items-center gap-3 text-white/50 hover:text-white transition-colors group">
+                <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#CC2020] transition-colors">
+                  <Mail className="w-3.5 h-3.5" />
+                </div>
+                <span className="text-sm break-all">{business.email}</span>
+              </a>
+              <div className="flex items-start gap-3 text-white/50">
+                <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center shrink-0">
+                  <MapPin className="w-3.5 h-3.5" />
+                </div>
+                <span className="text-sm leading-relaxed">{business.address}</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="text-white/30 text-xs">
+            &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
+          </p>
+          <p className="text-white/30 text-xs">Designed by{" "}
+            <span style={{ color: "#CC2020" }}>Mumbo Agency</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
