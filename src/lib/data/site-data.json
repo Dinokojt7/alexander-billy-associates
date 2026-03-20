@@ -1,12 +1,12 @@
 {
   "business": {
-    "name": "Alexander Billy and Associates",
-    "tagline": "Serving Community Over 25 Years",
-    "shortName": "Alexander Billy",
+    "name": "G Industries Consolidated",
+    "tagline": "Serving your community with expertise & trust",
+    "shortName": "GIC Accountants",
     "description": "Tax specialists serving individuals and businesses across KZN for over 25 years with personalised, professional service.",
-    "email": "mrmasungwini@gmail.com",
-    "phone": "+27781294890",
-    "address": "Durban, KZN, South Africa",
+    "email": "info@gindustriesconsolidated.co.za",
+    "phone": "+27817283767",
+    "address": "60 Seaglen Drive, Seaglen Gardens, Seaviews, Durban, 4146",
     "social": {
       "instagram": "#",
       "facebook": "#",
@@ -15,17 +15,44 @@
     }
   },
   "services": [
-    { "title": "Tax Returns", "description": "Individual and corporate tax return preparation and submission." },
-    { "title": "Tax Planning", "description": "Strategic tax planning to minimise liability and maximise savings." },
-    { "title": "Financial Reports", "description": "Comprehensive financial statements and management accounts." },
-    { "title": "Payroll Services", "description": "Full payroll processing, compliance, and PAYE management." },
-    { "title": "Budget Analysis", "description": "Detailed budget planning and variance analysis for your business." },
-    { "title": "Internal Auditing", "description": "Certified internal audit services ensuring compliance and accuracy." }
+    {
+      "title": "Tax Returns",
+      "description": "Individual and corporate tax return preparation and submission."
+    },
+    {
+      "title": "Tax Planning",
+      "description": "Strategic tax planning to minimise liability and maximise savings."
+    },
+    {
+      "title": "Financial Reports",
+      "description": "Comprehensive financial statements and management accounts."
+    },
+    {
+      "title": "Payroll Services",
+      "description": "Full payroll processing, compliance, and PAYE management."
+    },
+    {
+      "title": "Budget Analysis",
+      "description": "Detailed budget planning and variance analysis for your business."
+    },
+    {
+      "title": "Internal Auditing",
+      "description": "Certified internal audit services ensuring compliance and accuracy."
+    }
   ],
   "stats": [
-    { "num": "25+", "label": "Years Experience" },
-    { "num": "500+", "label": "Clients Served" },
-    { "num": "100%", "label": "SARS Compliant" }
+    {
+      "num": "25+",
+      "label": "Years Experience"
+    },
+    {
+      "num": "500+",
+      "label": "Clients Served"
+    },
+    {
+      "num": "100%",
+      "label": "SARS Compliant"
+    }
   ],
   "testimonials": [
     {
@@ -80,17 +107,44 @@
   ],
   "footer": {
     "quickLinks": [
-      { "label": "Home", "href": "/" },
-      { "label": "About Us", "href": "/#about" },
-      { "label": "Services", "href": "/#services" },
-      { "label": "Testimonials", "href": "/#testimonials" },
-      { "label": "FAQ", "href": "/#faq" },
-      { "label": "Contact", "href": "/#contact" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/#about"
+      },
+      {
+        "label": "Services",
+        "href": "/#services"
+      },
+      {
+        "label": "Testimonials",
+        "href": "/#testimonials"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      },
+      {
+        "label": "Contact",
+        "href": "/#contact"
+      }
     ],
     "legal": [
-      { "label": "Privacy Policy", "href": "/privacy-policy" },
-      { "label": "Terms of Service", "href": "/terms" },
-      { "label": "PAIA Manual", "href": "/paia" }
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "/terms"
+      },
+      {
+        "label": "PAIA Manual",
+        "href": "/paia"
+      }
     ]
   }
 }

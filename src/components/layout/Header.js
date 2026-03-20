@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import siteData from "@/lib/data/site-data.json";
@@ -30,15 +29,16 @@ export default function Header() {
       {/* Header */}
       <header style={{ backgroundColor: "#3D3D3D" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="relative h-14 w-40 shrink-0">
-            <Image
-              src="/images/logo.png"
-              alt="Alexander Billy and Associates"
-              fill
-              priority
-              className="object-contain object-left"
-            />
+          {/* Text Logo - No Image */}
+          <Link href="/" className="shrink-0">
+            <div className="flex flex-col">
+              <span className="text-white text-xl font-bold tracking-wide">
+                {siteData.business.shortName}
+              </span>
+              <span className="text-white/60 text-[10px] tracking-wider uppercase">
+                {siteData.business.tagline}
+              </span>
+            </div>
           </Link>
 
           {/* Right actions */}
@@ -113,8 +113,15 @@ export default function Header() {
               style={{ backgroundColor: "#3D3D3D" }}
             >
               <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
-                <Link href="/" className="relative h-12 w-32" onClick={() => setMenuOpen(false)}>
-                  <Image src="/images/logo.png" alt="Alexander Billy and Associates" fill className="object-contain object-left brightness-0 invert" />
+                <Link href="/" className="shrink-0" onClick={() => setMenuOpen(false)}>
+                  <div className="flex flex-col">
+                    <span className="text-white text-lg font-bold tracking-wide">
+                      {siteData.business.shortName}
+                    </span>
+                    <span className="text-white/60 text-[8px] tracking-wider uppercase">
+                      {siteData.business.tagline}
+                    </span>
+                  </div>
                 </Link>
                 <button onClick={() => setMenuOpen(false)} className="p-2 text-white">
                   <X className="w-5 h-5" />
